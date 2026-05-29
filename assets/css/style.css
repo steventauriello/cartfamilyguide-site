@@ -525,6 +525,67 @@ main{
 .caregiver-content p:last-child{
   margin-bottom:0;
 }
+.caregiver-product-links{
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+
+  margin:30px 0;
+}
+
+.caregiver-product-card{
+  width:160px;
+
+  display:block;
+
+  background:#f7f9fc;
+
+  border:1px solid var(--border);
+  border-radius:14px;
+
+  padding:12px;
+
+  transition:0.2s ease;
+}
+.caregiver-card-label{
+  display:block;
+  margin-bottom:10px;
+
+  color:var(--primary);
+
+  font-size:0.78rem;
+  font-weight:800;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  line-height:1.2;
+}
+.caregiver-product-card:hover{
+  transform:translateY(-3px);
+  border-color:#bfd0e0;
+}
+
+.caregiver-product-card img{
+  width:100%;
+  height:110px;
+
+  object-fit:contain;
+
+  background:white;
+
+  border-radius:10px;
+
+  margin-bottom:10px;
+}
+
+.caregiver-product-card span{
+  display:block;
+
+  color:var(--primary-dark);
+
+  font-size:0.88rem;
+  font-weight:700;
+  line-height:1.35;
+}
 
 /* =========================================
    CAREGIVER GUIDE MOBILE
