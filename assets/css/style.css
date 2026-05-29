@@ -155,6 +155,59 @@ main{
 }
 
 /* =========================================
+   HOMEPAGE SIDE NOTES
+========================================= */
+
+.home-note-section{
+  width:100%;
+  padding:0 24px 32px;
+}
+
+.home-note-card{
+  width:100%;
+  max-width:1200px;
+
+  margin:0 auto;
+
+  display:block;
+
+  padding-left:18px;
+
+  border-left:3px solid var(--primary);
+
+  transition:0.2s ease;
+}
+
+.home-note-card:hover{
+  transform:translateX(4px);
+}
+
+.home-note-card .eyebrow{
+  margin-bottom:6px;
+  font-size:0.8rem;
+}
+
+.home-note-card blockquote{
+  max-width:420px;
+
+  color:var(--muted);
+
+  font-size:0.98rem;
+  line-height:1.6;
+
+  font-weight:400;
+
+  margin:0 0 8px;
+}
+
+.home-note-card span{
+  color:var(--primary-dark);
+
+  font-size:0.9rem;
+  font-weight:700;
+}
+
+/* =========================================
    HOMEPAGE TIMELINE FEATURE
 ========================================= */
 
@@ -296,12 +349,14 @@ main{
   .hero h1{
     font-size:2.6rem;
   }
+
   .timeline-feature-card{
     grid-template-columns:1fr;
 
     padding:28px;
   }
 }
+
 /* =========================================
    FEATURE CARDS
 ========================================= */
@@ -366,6 +421,7 @@ main{
   }
 
 }
+
 /* =========================================
    INNER PAGES
 ========================================= */
@@ -419,6 +475,69 @@ main{
   }
 
 }
+
+/* =========================================
+   CAREGIVER GUIDE
+========================================= */
+
+.caregiver-section{
+  width:100%;
+  padding:0 24px 120px;
+}
+
+.caregiver-content{
+  width:100%;
+  max-width:900px;
+
+  margin:0 auto;
+
+  background:var(--surface);
+
+  border:1px solid var(--border);
+
+  border-radius:var(--radius);
+
+  padding:50px 60px;
+
+  box-shadow:var(--shadow);
+}
+
+.caregiver-content h2{
+  font-size:clamp(2rem, 5vw, 3rem);
+
+  line-height:1.15;
+
+  margin-bottom:24px;
+
+  color:var(--primary-dark);
+}
+
+.caregiver-content p{
+  color:var(--muted);
+
+  font-size:1.05rem;
+
+  line-height:1.75;
+
+  margin-bottom:20px;
+}
+
+.caregiver-content p:last-child{
+  margin-bottom:0;
+}
+
+/* =========================================
+   CAREGIVER GUIDE MOBILE
+========================================= */
+
+@media (max-width: 900px){
+
+  .caregiver-content{
+    padding:40px 28px;
+  }
+
+}
+
 /* =========================================
    TIMELINE
 ========================================= */
